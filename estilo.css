@@ -37,7 +37,7 @@ header .menu li a:hover {
 
 /* Abaixo as estilizações da imagem que coloquei no projeto */
 #hero {
-    background-image: url(img.png);
+    background-image: url('img.png');
     background-size: contain; 
     background-position: center;
     height: 100vh;
