@@ -1,0 +1,142 @@
+/* Abaixo estão algumas estilizações para a página. Porém não vou comentar todas por serem básicas da linguagem*/
+body{
+    font-family: 'Roboto', sans-serif; /* Aqui eu chamei uma fonte que coloquei na página index*/
+    margin: 0;
+    padding: 0;
+}
+
+header .menu {
+    background-image: linear-gradient(to bottom, #333, #071026);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+header .menu li {
+    float: left;
+}
+
+header .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header .menu li a:hover {
+    background-color: #111;
+}
+
+/* Abaixo as estilizações da imagem que coloquei no projeto */
+#hero {
+    background-image: url(img/img.png);
+    background-size: contain; 
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero-content h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.hero-content p {
+    font-size: 1.5rem;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* A cor de fundo muda na função hover de forma de transição suave*/
+}
+.btn:hover {
+    background-color: #0056b3; /* Essa é a cor que ficará quando passar o mouse, de forma de transição suave especificado acima*/
+}
+
+main .conteudo {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.caixa {
+    margin: 20px;
+    border: 2px solid #333; /* Cor e espessura da borda */
+    background-color: #f2f2f2;
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Arredondamento das bordas */
+    margin-bottom: 50px; /* Espaçamento abaixo da caixa */
+    text-align: center; /* Centralizar o conteúdo */
+}
+.caixa a{
+    text-decoration: none;
+    color: #20c5cb;
+}
+.caixa p {
+    color: blue;
+    font-family: Montserrat;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.7rem;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    opacity: 0.5;
+}
+
+#scrollTopBtn:hover{
+    background-color: #0056b3;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav> <!-- Aqui repete o menu do página inicial (index)-->
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#formacao">Formação</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section>
+            <h1>Contato</h1>
+            <form id="contactForm"> <!-- Abaixo o formulário com nome, email e textarea -->
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea name="mensagem" id="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar</button> <!-- Botão para enviar a pergunta-->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script> // Aqui começa o script para poder imprimir mensagens nos campos do formulário
+        document.getElementById('contactForm').addEventListener('submit', function(event){
+            event.preventDefault(); //evita o envio padrão do formulário
+
+            //Limpa os campos do formulário
+            document.getElementById('nome').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('mensagem').value = '';
+
+            // Exibe o alerta de mensagem enviada
+            alert('Mensagem enviada com sucesso!');
+        });
+    </script>
+</body>
+</html>
